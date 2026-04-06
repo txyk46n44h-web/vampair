@@ -1,57 +1,193 @@
 <!DOCTYPE html>
-<html lang="en" style="--primary: 0 85% 45%; --accent: 0 85% 45%; --ring: 0 85% 45%; --blood: 0 85% 45%; --blood-dark: 0 90% 25%; --blood-glow: 0 100% 50%; --background: 0 0% 4%; --glow-intensity: 0.5;" class=" idc0_343 sksgwqfk"><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>vampair</title>
-    <meta name="description" content="digital phantom · dev · creator. building things in the dark.">
-    <meta name="author" content="vampair">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vampair</title>
 
-    
-    
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/533bca2f-fc12-4bdd-bc7f-9c73f2040ea3/id-preview-a91b4fd0--896fa6c7-9cba-4c24-b9f0-e9a317b03b16.lovable.app-1775397984324.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@Lovable">
-    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/533bca2f-fc12-4bdd-bc7f-9c73f2040ea3/id-preview-a91b4fd0--896fa6c7-9cba-4c24-b9f0-e9a317b03b16.lovable.app-1775397984324.png">
-    <meta property="og:title" content="vampair">
-  <meta name="twitter:title" content="vampair">
-  <meta property="og:description" content="digital phantom · dev · creator. building things in the dark.">
-  <meta name="twitter:description" content="digital phantom · dev · creator. building things in the dark.">
-  <script type="module" crossorigin="" src="vampair_files/index-DpMqWfE5.js"></script>
-  <link rel="stylesheet" crossorigin="" href="vampair_files/index-DEb_nfpZ.css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<style>
-	@font-face {
-		font-family: 'CameraPlainVariable';
-		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
-		font-weight: 100 900;
-		font-style: normal;
-		font-display: swap;
-	}
+    body {
+      background: #050505;
+      color: #ff2a2a;
+      font-family: 'Share Tech Mono', monospace;
+      overflow-x: hidden;
+    }
 
-	
-</style>
-<script defer="defer" src="vampair_files/~flock.js" data-proxy-url="/~api/analytics"></script><style type="text/css">:where(html[dir="ltr"]),:where([data-sonner-toaster][dir="ltr"]){--toast-icon-margin-start: -3px;--toast-icon-margin-end: 4px;--toast-svg-margin-start: -1px;--toast-svg-margin-end: 0px;--toast-button-margin-start: auto;--toast-button-margin-end: 0;--toast-close-button-start: 0;--toast-close-button-end: unset;--toast-close-button-transform: translate(-35%, -35%)}:where(html[dir="rtl"]),:where([data-sonner-toaster][dir="rtl"]){--toast-icon-margin-start: 4px;--toast-icon-margin-end: -3px;--toast-svg-margin-start: 0px;--toast-svg-margin-end: -1px;--toast-button-margin-start: 0;--toast-button-margin-end: auto;--toast-close-button-start: unset;--toast-close-button-end: 0;--toast-close-button-transform: translate(35%, -35%)}:where([data-sonner-toaster]){position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1: hsl(0, 0%, 99%);--gray2: hsl(0, 0%, 97.3%);--gray3: hsl(0, 0%, 95.1%);--gray4: hsl(0, 0%, 93%);--gray5: hsl(0, 0%, 90.9%);--gray6: hsl(0, 0%, 88.7%);--gray7: hsl(0, 0%, 85.8%);--gray8: hsl(0, 0%, 78%);--gray9: hsl(0, 0%, 56.1%);--gray10: hsl(0, 0%, 52.3%);--gray11: hsl(0, 0%, 43.5%);--gray12: hsl(0, 0%, 9%);--border-radius: 8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:none;z-index:999999999;transition:transform .4s ease}:where([data-sonner-toaster][data-lifted="true"]){transform:translateY(-10px)}@media (hover: none) and (pointer: coarse){:where([data-sonner-toaster][data-lifted="true"]){transform:none}}:where([data-sonner-toaster][data-x-position="right"]){right:var(--offset-right)}:where([data-sonner-toaster][data-x-position="left"]){left:var(--offset-left)}:where([data-sonner-toaster][data-x-position="center"]){left:50%;transform:translate(-50%)}:where([data-sonner-toaster][data-y-position="top"]){top:var(--offset-top)}:where([data-sonner-toaster][data-y-position="bottom"]){bottom:var(--offset-bottom)}:where([data-sonner-toast]){--y: translateY(100%);--lift-amount: calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);filter:blur(0);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:none;overflow-wrap:anywhere}:where([data-sonner-toast][data-styled="true"]){padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px #0000001a;width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}:where([data-sonner-toast]:focus-visible){box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast][data-y-position="top"]){top:0;--y: translateY(-100%);--lift: 1;--lift-amount: calc(1 * var(--gap))}:where([data-sonner-toast][data-y-position="bottom"]){bottom:0;--y: translateY(100%);--lift: -1;--lift-amount: calc(var(--lift) * var(--gap))}:where([data-sonner-toast]) :where([data-description]){font-weight:400;line-height:1.4;color:inherit}:where([data-sonner-toast]) :where([data-title]){font-weight:500;line-height:1.5;color:inherit}:where([data-sonner-toast]) :where([data-icon]){display:flex;height:16px;width:16px;position:relative;justify-content:flex-start;align-items:center;flex-shrink:0;margin-left:var(--toast-icon-margin-start);margin-right:var(--toast-icon-margin-end)}:where([data-sonner-toast][data-promise="true"]) :where([data-icon])>svg{opacity:0;transform:scale(.8);transform-origin:center;animation:sonner-fade-in .3s ease forwards}:where([data-sonner-toast]) :where([data-icon])>*{flex-shrink:0}:where([data-sonner-toast]) :where([data-icon]) svg{margin-left:var(--toast-svg-margin-start);margin-right:var(--toast-svg-margin-end)}:where([data-sonner-toast]) :where([data-content]){display:flex;flex-direction:column;gap:2px}[data-sonner-toast][data-styled=true] [data-button]{border-radius:4px;padding-left:8px;padding-right:8px;height:24px;font-size:12px;color:var(--normal-bg);background:var(--normal-text);margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end);border:none;cursor:pointer;outline:none;display:flex;align-items:center;flex-shrink:0;transition:opacity .4s,box-shadow .2s}:where([data-sonner-toast]) :where([data-button]):focus-visible{box-shadow:0 0 0 2px #0006}:where([data-sonner-toast]) :where([data-button]):first-of-type{margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end)}:where([data-sonner-toast]) :where([data-cancel]){color:var(--normal-text);background:rgba(0,0,0,.08)}:where([data-sonner-toast][data-theme="dark"]) :where([data-cancel]){background:rgba(255,255,255,.3)}:where([data-sonner-toast]) :where([data-close-button]){position:absolute;left:var(--toast-close-button-start);right:var(--toast-close-button-end);top:0;height:20px;width:20px;display:flex;justify-content:center;align-items:center;padding:0;color:var(--gray12);border:1px solid var(--gray4);transform:var(--toast-close-button-transform);border-radius:50%;cursor:pointer;z-index:1;transition:opacity .1s,background .2s,border-color .2s}[data-sonner-toast] [data-close-button]{background:var(--gray1)}:where([data-sonner-toast]) :where([data-close-button]):focus-visible{box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast]) :where([data-disabled="true"]){cursor:not-allowed}:where([data-sonner-toast]):hover :where([data-close-button]):hover{background:var(--gray2);border-color:var(--gray5)}:where([data-sonner-toast][data-swiping="true"]):before{content:"";position:absolute;left:-50%;right:-50%;height:100%;z-index:-1}:where([data-sonner-toast][data-y-position="top"][data-swiping="true"]):before{bottom:50%;transform:scaleY(3) translateY(50%)}:where([data-sonner-toast][data-y-position="bottom"][data-swiping="true"]):before{top:50%;transform:scaleY(3) translateY(-50%)}:where([data-sonner-toast][data-swiping="false"][data-removed="true"]):before{content:"";position:absolute;inset:0;transform:scaleY(2)}:where([data-sonner-toast]):after{content:"";position:absolute;left:0;height:calc(var(--gap) + 1px);bottom:100%;width:100%}:where([data-sonner-toast][data-mounted="true"]){--y: translateY(0);opacity:1}:where([data-sonner-toast][data-expanded="false"][data-front="false"]){--scale: var(--toasts-before) * .05 + 1;--y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));height:var(--front-toast-height)}:where([data-sonner-toast])>*{transition:opacity .4s}:where([data-sonner-toast][data-expanded="false"][data-front="false"][data-styled="true"])>*{opacity:0}:where([data-sonner-toast][data-visible="false"]){opacity:0;pointer-events:none}:where([data-sonner-toast][data-mounted="true"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset)));height:var(--initial-height)}:where([data-sonner-toast][data-removed="true"][data-front="true"][data-swipe-out="false"]){--y: translateY(calc(var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="false"]){--y: translateY(40%);opacity:0;transition:transform .5s,opacity .2s}:where([data-sonner-toast][data-removed="true"][data-front="false"]):before{height:calc(var(--initial-height) + 20%)}[data-sonner-toast][data-swiping=true]{transform:var(--y) translateY(var(--swipe-amount-y, 0px)) translate(var(--swipe-amount-x, 0px));transition:none}[data-sonner-toast][data-swiped=true]{user-select:none}[data-sonner-toast][data-swipe-out=true][data-y-position=bottom],[data-sonner-toast][data-swipe-out=true][data-y-position=top]{animation-duration:.2s;animation-timing-function:ease-out;animation-fill-mode:forwards}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=left]{animation-name:swipe-out-left}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=right]{animation-name:swipe-out-right}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=up]{animation-name:swipe-out-up}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=down]{animation-name:swipe-out-down}@keyframes swipe-out-left{0%{transform:var(--y) translate(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translate(calc(var(--swipe-amount-x) - 100%));opacity:0}}@keyframes swipe-out-right{0%{transform:var(--y) translate(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translate(calc(var(--swipe-amount-x) + 100%));opacity:0}}@keyframes swipe-out-up{0%{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) - 100%));opacity:0}}@keyframes swipe-out-down{0%{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) + 100%));opacity:0}}@media (max-width: 600px){[data-sonner-toaster]{position:fixed;right:var(--mobile-offset-right);left:var(--mobile-offset-left);width:100%}[data-sonner-toaster][dir=rtl]{left:calc(var(--mobile-offset-left) * -1)}[data-sonner-toaster] [data-sonner-toast]{left:0;right:0;width:calc(100% - var(--mobile-offset-left) * 2)}[data-sonner-toaster][data-x-position=left]{left:var(--mobile-offset-left)}[data-sonner-toaster][data-y-position=bottom]{bottom:var(--mobile-offset-bottom)}[data-sonner-toaster][data-y-position=top]{top:var(--mobile-offset-top)}[data-sonner-toaster][data-x-position=center]{left:var(--mobile-offset-left);right:var(--mobile-offset-right);transform:none}}[data-sonner-toaster][data-theme=light]{--normal-bg: #fff;--normal-border: var(--gray4);--normal-text: var(--gray12);--success-bg: hsl(143, 85%, 96%);--success-border: hsl(145, 92%, 91%);--success-text: hsl(140, 100%, 27%);--info-bg: hsl(208, 100%, 97%);--info-border: hsl(221, 91%, 91%);--info-text: hsl(210, 92%, 45%);--warning-bg: hsl(49, 100%, 97%);--warning-border: hsl(49, 91%, 91%);--warning-text: hsl(31, 92%, 45%);--error-bg: hsl(359, 100%, 97%);--error-border: hsl(359, 100%, 94%);--error-text: hsl(360, 100%, 45%)}[data-sonner-toaster][data-theme=light] [data-sonner-toast][data-invert=true]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast][data-invert=true]{--normal-bg: #fff;--normal-border: var(--gray3);--normal-text: var(--gray12)}[data-sonner-toaster][data-theme=dark]{--normal-bg: #000;--normal-bg-hover: hsl(0, 0%, 12%);--normal-border: hsl(0, 0%, 20%);--normal-border-hover: hsl(0, 0%, 25%);--normal-text: var(--gray1);--success-bg: hsl(150, 100%, 6%);--success-border: hsl(147, 100%, 12%);--success-text: hsl(150, 86%, 65%);--info-bg: hsl(215, 100%, 6%);--info-border: hsl(223, 100%, 12%);--info-text: hsl(216, 87%, 65%);--warning-bg: hsl(64, 100%, 6%);--warning-border: hsl(60, 100%, 12%);--warning-text: hsl(46, 87%, 65%);--error-bg: hsl(358, 76%, 10%);--error-border: hsl(357, 89%, 16%);--error-text: hsl(358, 100%, 81%)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast] [data-close-button]{background:var(--normal-bg);border-color:var(--normal-border);color:var(--normal-text)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast] [data-close-button]:hover{background:var(--normal-bg-hover);border-color:var(--normal-border-hover)}[data-rich-colors=true][data-sonner-toast][data-type=success],[data-rich-colors=true][data-sonner-toast][data-type=success] [data-close-button]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=info],[data-rich-colors=true][data-sonner-toast][data-type=info] [data-close-button]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning],[data-rich-colors=true][data-sonner-toast][data-type=warning] [data-close-button]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=error],[data-rich-colors=true][data-sonner-toast][data-type=error] [data-close-button]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}.sonner-loading-wrapper{--size: 16px;height:var(--size);width:var(--size);position:absolute;inset:0;z-index:10}.sonner-loading-wrapper[data-visible=false]{transform-origin:center;animation:sonner-fade-out .2s ease forwards}.sonner-spinner{position:relative;top:50%;left:50%;height:var(--size);width:var(--size)}.sonner-loading-bar{animation:sonner-spin 1.2s linear infinite;background:var(--gray11);border-radius:6px;height:8%;left:-10%;position:absolute;top:-3.9%;width:24%}.sonner-loading-bar:nth-child(1){animation-delay:-1.2s;transform:rotate(.0001deg) translate(146%)}.sonner-loading-bar:nth-child(2){animation-delay:-1.1s;transform:rotate(30deg) translate(146%)}.sonner-loading-bar:nth-child(3){animation-delay:-1s;transform:rotate(60deg) translate(146%)}.sonner-loading-bar:nth-child(4){animation-delay:-.9s;transform:rotate(90deg) translate(146%)}.sonner-loading-bar:nth-child(5){animation-delay:-.8s;transform:rotate(120deg) translate(146%)}.sonner-loading-bar:nth-child(6){animation-delay:-.7s;transform:rotate(150deg) translate(146%)}.sonner-loading-bar:nth-child(7){animation-delay:-.6s;transform:rotate(180deg) translate(146%)}.sonner-loading-bar:nth-child(8){animation-delay:-.5s;transform:rotate(210deg) translate(146%)}.sonner-loading-bar:nth-child(9){animation-delay:-.4s;transform:rotate(240deg) translate(146%)}.sonner-loading-bar:nth-child(10){animation-delay:-.3s;transform:rotate(270deg) translate(146%)}.sonner-loading-bar:nth-child(11){animation-delay:-.2s;transform:rotate(300deg) translate(146%)}.sonner-loading-bar:nth-child(12){animation-delay:-.1s;transform:rotate(330deg) translate(146%)}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}to{opacity:.15}}@media (prefers-reduced-motion){[data-sonner-toast],[data-sonner-toast]>*,.sonner-loading-bar{transition:none!important;animation:none!important}}.sonner-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);transform-origin:center;transition:opacity .2s,transform .2s}.sonner-loader[data-visible=false]{opacity:0;transform:scale(.8) translate(-50%,-50%)}
-</style></head>
+    .grid {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(255,0,0,0.05) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255,0,0,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: -1;
+    }
 
-  <body>
-    <div id="root"><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol></div><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section><div class="relative transition-all duration-700 opacity-100"><img src="vampair_files/bg-DYfju3VE.jpg" alt="" class="fixed inset-0 w-full h-full object-cover -z-10" width="1920" height="1080"><div class="fixed inset-0 bg-background/85 -z-10"></div><div class="fixed inset-0 noise-bg -z-10"></div><section class="relative min-h-screen flex items-center justify-center px-4 overflow-hidden scan-overlay"><div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-primary/4 blur-[160px] animate-glow-pulse"></div><div class="absolute bottom-0 right-0 w-[250px] h-[250px] rounded-full bg-primary/3 blur-[100px]"></div><div class="absolute inset-0 pointer-events-none scanlines opacity-[0.02]"></div><div class="absolute w-[1px] h-[1px] rounded-full bg-primary/30" style="left: 73.2294%; top: 50.8432%; animation: 9.64822s ease-out 1.29285s infinite ember-float;"></div><div class="absolute w-[1px] h-[1px] rounded-full bg-primary/30" style="left: 72.6608%; top: 28.8087%; animation: 6.07291s ease-out 0.788242s infinite ember-float;"></div><div class="absolute w-[1px] h-[1px] rounded-full bg-primary/30" style="left: 64.2414%; top: 20.2826%; animation: 9.86192s ease-out 2.34084s infinite ember-float;"></div><div class="absolute w-[1px] h-[1px] rounded-full bg-primary/30" style="left: 43.998%; top: 30.7516%; animation: 5.11444s ease-out 2.41329s infinite ember-float;"></div><div class="absolute w-[1px] h-[1px] rounded-full bg-primary/30" style="left: 61.6577%; top: 79.3167%; animation: 6.27193s ease-out 1.68324s infinite ember-float;"></div><div class="absolute w-[1px] h-[1px] rounded-full bg-primary/30" style="left: 73.5788%; top: 22.4187%; animation: 6.58508s ease-out 2.90612s infinite ember-float;"></div><div class="absolute w-[1px] h-[1px] rounded-full bg-primary/30" style="left: 49.2899%; top: 69.8931%; animation: 9.20955s ease-out 2.78009s infinite ember-float;"></div><div class="absolute w-[1px] h-[1px] rounded-full bg-primary/30" style="left: 18.3264%; top: 56.3225%; animation: 8.14502s ease-out 3.85779s infinite ember-float;"></div><div class="relative z-10 text-center max-w-xl mx-auto"><div class="flex justify-center mb-10 animate-slide-up"><div class="relative group"><div class="absolute -inset-1.5 rounded-full bg-gradient-to-b from-primary/30 to-transparent blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-700"></div><img src="vampair_files/avatar-BQQJI1Xi.png" alt="Avatar" width="110" height="110" class="w-[110px] h-[110px] rounded-full border border-primary/20 object-cover relative z-10 transition-all duration-500 group-hover:border-primary/50"><div class="absolute bottom-1.5 right-1.5 w-3.5 h-3.5 rounded-full bg-primary border-2 border-background z-20 glow-sm" style="animation: 3s ease-in-out infinite glow-pulse;"></div></div></div><div class="mb-6 animate-slide-up" style="animation-delay: 100ms;"><span class="font-terminal text-primary/60 text-xs tracking-wider"><span class="text-primary/30">&gt; </span>accessing network...<span class="inline-block w-[6px] h-[14px] bg-primary/60 ml-0.5 align-middle" style="animation: 0.8s steps(1) infinite typing-cursor;"></span></span></div><p class="text-muted-foreground/60 text-xs font-terminal tracking-[0.2em] mb-5 animate-slide-up" style="animation-delay: 150ms;">@vampair386</p><div class="flex justify-center mb-8 animate-slide-up" style="animation-delay: 250ms;"><span class="px-4 py-1.5 text-[9px] uppercase tracking-[0.3em] font-terminal rounded border border-primary/20 text-primary/80 bg-primary/5">systems. code. control.</span></div><h1 class="text-4xl md:text-6xl font-bold font-display mb-5 animate-slide-up leading-tight tracking-tight" style="animation-delay: 350ms;">I'm <span class="text-primary text-glow glitch-text" data-text="Vampair">Vampair</span></h1><p class="text-muted-foreground/70 text-sm md:text-base leading-relaxed mb-10 max-w-md mx-auto animate-slide-up" style="animation-delay: 450ms;">Passionate developer building things in the dark. Code, creativity &amp; chaos — from Italy.</p><div class="flex justify-center gap-3 mb-14 animate-slide-up" style="animation-delay: 550ms;"><a href="#projects" class="group relative px-6 py-3 rounded-lg bg-primary/90 text-primary-foreground font-semibold text-sm transition-all duration-300 hover:bg-primary hover:glow-md">View Projects</a><a href="#contact" class="px-6 py-3 rounded-lg border border-border/50 text-foreground/60 font-semibold text-sm transition-all duration-300 hover:border-primary/40 hover:text-foreground">Contact</a></div><div class="flex flex-wrap justify-center gap-1.5 animate-slide-up" style="animation-delay: 650ms;"><span class="px-2.5 py-1 text-[10px] font-terminal rounded border border-border/30 text-muted-foreground/60
-                transition-all duration-300 hover:border-primary/30 hover:text-primary/80">JavaScript</span><span class="px-2.5 py-1 text-[10px] font-terminal rounded border border-border/30 text-muted-foreground/60
-                transition-all duration-300 hover:border-primary/30 hover:text-primary/80">TypeScript</span><span class="px-2.5 py-1 text-[10px] font-terminal rounded border border-border/30 text-muted-foreground/60
-                transition-all duration-300 hover:border-primary/30 hover:text-primary/80">React</span><span class="px-2.5 py-1 text-[10px] font-terminal rounded border border-border/30 text-muted-foreground/60
-                transition-all duration-300 hover:border-primary/30 hover:text-primary/80">Node.js</span><span class="px-2.5 py-1 text-[10px] font-terminal rounded border border-border/30 text-muted-foreground/60
-                transition-all duration-300 hover:border-primary/30 hover:text-primary/80">Discord.js</span></div></div><div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce-slow"><div class="w-4 h-7 rounded-full border border-muted-foreground/15 flex justify-center pt-1.5"><div class="w-0.5 h-1.5 rounded-full bg-primary/40"></div></div></div></section><section id="projects" class="py-24 px-4 relative"><div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/15 to-transparent"></div><div class="max-w-2xl mx-auto"><div class="text-center mb-14"><p class="text-primary/60 text-[10px] uppercase tracking-[0.3em] font-terminal mb-2">// projects</p><h2 class="text-2xl md:text-4xl font-bold font-display tracking-tight">My Work</h2></div><div class="grid gap-4 md:grid-cols-2"><a href="#" rel="noopener noreferrer" class="group glass rounded-xl p-5 transition-all duration-400 hover:border-primary/25 hover:glow-sm animate-slide-up block" style="animation-delay: 0ms;"><div class="flex items-start justify-between mb-2"><h3 class="text-sm font-semibold font-display transition-colors duration-300 group-hover:text-primary">Project Alpha</h3><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link text-muted-foreground/20 group-hover:text-primary/60 transition-all duration-300"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></div><p class="text-muted-foreground/60 text-xs leading-relaxed mb-4" style="background-color: transparent;">A multi-function Discord bot with music, moderation and auto-moderation features.</p><div class="flex flex-wrap gap-1.5"><span class="text-[9px] font-terminal px-2 py-0.5 rounded bg-muted/30 text-muted-foreground/50 border border-border/20">TypeScript</span><span class="text-[9px] font-terminal px-2 py-0.5 rounded bg-muted/30 text-muted-foreground/50 border border-border/20">Discord.js</span><span class="text-[9px] font-terminal px-2 py-0.5 rounded bg-muted/30 text-muted-foreground/50 border border-border/20">Node.js</span></div></a><a href="#" rel="noopener noreferrer" class="group glass rounded-xl p-5 transition-all duration-400 hover:border-primary/25 hover:glow-sm animate-slide-up block" style="animation-delay: 120ms;"><div class="flex items-start justify-between mb-2"><h3 class="text-sm font-semibold font-display transition-colors duration-300 group-hover:text-primary">Project Beta</h3><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link text-muted-foreground/20 group-hover:text-primary/60 transition-all duration-300"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></div><p class="text-muted-foreground/60 text-xs leading-relaxed mb-4">Community management platform with custom plugins and real-time analytics.</p><div class="flex flex-wrap gap-1.5"><span class="text-[9px] font-terminal px-2 py-0.5 rounded bg-muted/30 text-muted-foreground/50 border border-border/20">React</span><span class="text-[9px] font-terminal px-2 py-0.5 rounded bg-muted/30 text-muted-foreground/50 border border-border/20">Node.js</span><span class="text-[9px] font-terminal px-2 py-0.5 rounded bg-muted/30 text-muted-foreground/50 border border-border/20">PostgreSQL</span></div></a></div></div></section><section id="contact" class="py-24 px-4 relative"><div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/15 to-transparent"></div><div class="max-w-xl mx-auto text-center relative z-10"><p class="text-primary/60 text-[10px] uppercase tracking-[0.3em] font-terminal mb-2">// contact</p><h2 class="text-2xl md:text-4xl font-bold font-display mb-4 tracking-tight">Get in Touch</h2><p class="text-muted-foreground/60 text-xs mb-10 max-w-sm mx-auto">Have an interesting project? I'm always open to new opportunities and collaborations.</p><div class="flex flex-wrap justify-center gap-2.5"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border/30 bg-muted/15 text-muted-foreground/70 text-xs
-              transition-all duration-300 hover:border-primary/30 hover:text-primary hover:bg-primary/5 hover:glow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg><span class="font-medium">GitHub</span></a><a href="https://discord.com/" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border/30 bg-muted/15 text-muted-foreground/70 text-xs
-              transition-all duration-300 hover:border-primary/30 hover:text-primary hover:bg-primary/5 hover:glow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg><span class="font-medium">Discord</span></a><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border/30 bg-muted/15 text-muted-foreground/70 text-xs
-              transition-all duration-300 hover:border-primary/30 hover:text-primary hover:bg-primary/5 hover:glow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg><span class="font-medium">Instagram</span></a><a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border/30 bg-muted/15 text-muted-foreground/70 text-xs
-              transition-all duration-300 hover:border-primary/30 hover:text-primary hover:bg-primary/5 hover:glow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg><span class="font-medium">Spotify</span></a><a href="mailto:contact@example.com" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border/30 bg-muted/15 text-muted-foreground/70 text-xs
-              transition-all duration-300 hover:border-primary/30 hover:text-primary hover:bg-primary/5 hover:glow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><span class="font-medium">Email</span></a></div><div class="mt-20 flex items-center justify-center gap-3" data-admin-trigger="true"><div class="h-px w-10 bg-border/20"></div><p class="text-muted-foreground/20 text-[10px] font-terminal select-none">Designed and built with 🩸 by Vampair</p><div class="h-px w-10 bg-border/20"></div></div></div></section></div></div>
-  
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
 
+    .terminal {
+      border: 1px solid rgba(255,0,0,0.2);
+      padding: 30px;
+      border-radius: 10px;
+      background: rgba(0,0,0,0.6);
+      box-shadow: 0 0 20px rgba(255,0,0,0.1);
+    }
+
+    .line {
+      margin-bottom: 10px;
+      white-space: pre;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background: #ff2a2a;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .section {
+      margin-top: 50px;
+    }
+
+    .cmd {
+      display: block;
+      padding: 15px;
+      border: 1px solid rgba(255,0,0,0.2);
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .cmd:hover {
+      background: rgba(255,0,0,0.1);
+      transform: translateX(5px);
+    }
+
+    .projects {
+      margin-top: 20px;
+    }
+
+    .project {
+      border-left: 2px solid #ff2a2a;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      opacity: 0.8;
+      transition: 0.2s;
+    }
+
+    .project:hover {
+      opacity: 1;
+      transform: translateX(5px);
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      opacity: 0.4;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="grid"></div>
+
+<div class="container">
+
+  <div class="terminal" id="terminal">
+    <div class="line" id="typing"></div>
+    <span class="cursor"></span>
+  </div>
+
+  <div class="section">
+    <div class="cmd">> open github</div>
+    <div class="cmd">> join discord</div>
+    <div class="cmd">> contact</div>
+  </div>
+
+  <div class="section projects">
+    <div class="project">
+      [01] neural_interface<br>
+      status: active<br>
+      type: experimental system
+    </div>
+
+    <div class="project">
+      [02] shadow_net<br>
+      status: running<br>
+      type: private network
+    </div>
+
+    <div class="project">
+      [03] ghost_protocol<br>
+      status: unstable<br>
+      type: stealth framework
+    </div>
+  </div>
+
+  <footer id="adminTrigger">
+    tap x5
+  </footer>
+
+</div>
+
+<script>
+  const text = [
+    "> system initialized",
+    "> identity: vampair",
+    "> status: online",
+    "> access: granted"
+  ];
+
+  let line = 0;
+  let char = 0;
+  const speed = 40;
+
+  function type() {
+    if (line < text.length) {
+      if (char < text[line].length) {
+        document.getElementById("typing").innerHTML += text[line].charAt(char);
+        char++;
+        setTimeout(type, speed);
+      } else {
+        document.getElementById("typing").innerHTML += "\n";
+        line++;
+        char = 0;
+        setTimeout(type, 300);
+      }
+    }
+  }
+
+  type();
+
+  // admin trigger
+  let taps = 0;
+  document.getElementById("adminTrigger").addEventListener("click", () => {
+    taps++;
+    if (taps === 5) {
+      alert("Admin panel (existing system)");
+      taps = 0;
+    }
+    setTimeout(() => taps = 0, 2000);
+  });
 </script>
 
-
-<div state="voice" class="placeholder-icon" id="tts-placeholder-icon" title="Click to show TTS button" style="background-image: url(&quot;moz-extension://19700de3-b153-43bc-85bb-f5a6eed2ca21/data/content_script/icons/voice.png&quot;); top: 840.75px; left: 575.367px;"><canvas width="36" height="36" class="loading-circle" id="text-to-speech-loader" style="display: none;"></canvas></div></body></html>
+</body>
+</html>
