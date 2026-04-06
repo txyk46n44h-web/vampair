@@ -84,17 +84,7 @@
             color: white;
             overflow: hidden;
         }
-        #loginForm {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            box-shadow: 0px 0px 20px rgba(255, 0, 150, 0.5);
-            animation: glitch 1.5s infinite;
-        }
+       
         input {
             margin: 10px 0;
             padding: 10px;
@@ -115,30 +105,7 @@
             80% { transform: translate(-50%, -50%) translateX(5px); }
             100% { transform: translate(-50%, -50%) translateX(0); }
         }
-    </style>
-</head>
-<body>
-    <div id="loginForm">
-        <h2>Admin Login</h2>
-        <form id="form" onsubmit="return authenticate()">
-            <input type="password" id="password" placeholder="Enter your Password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>
-    <script>
-        function authenticate() {
-            const password = document.getElementById('password').value;
-            const correctPassword = 'YourSecurePassword'; // Change this to your actual password
-            if(password === correctPassword) {
-                alert('Login successful!');
-                // Redirect to admin area or perform admin functions
-            } else {
-                alert('Incorrect password');
-                return false;
-            }
-        }
-    </script>
-</body>
+    
     
     <meta property="og:type" content="website">
   
