@@ -8,23 +8,17 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       background: #050505;
       color: #ff2a2a;
       font-family: 'Share Tech Mono', monospace;
-      overflow-x: hidden;
     }
 
     .grid {
       position: fixed;
-      width: 100%;
-      height: 100%;
+      width: 100%; height: 100%;
       background-image: linear-gradient(rgba(255,0,0,0.05) 1px, transparent 1px),
                         linear-gradient(90deg, rgba(255,0,0,0.05) 1px, transparent 1px);
       background-size: 40px 40px;
@@ -37,18 +31,30 @@
       padding: 60px 20px;
     }
 
-    .terminal {
-      border: 1px solid rgba(255,0,0,0.2);
-      padding: 30px;
-      border-radius: 10px;
-      background: rgba(0,0,0,0.6);
-      box-shadow: 0 0 20px rgba(255,0,0,0.1);
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 40px;
     }
 
-    .line {
-      margin-bottom: 10px;
-      white-space: pre;
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,0,0,0.4);
+      object-fit: cover;
     }
+
+    .terminal {
+      border: 1px solid rgba(255,0,0,0.2);
+      padding: 20px;
+      border-radius: 10px;
+      background: rgba(0,0,0,0.6);
+      flex: 1;
+    }
+
+    .line { white-space: pre; }
 
     .cursor {
       display: inline-block;
@@ -57,19 +63,33 @@
       animation: blink 1s infinite;
     }
 
-    @keyframes blink {
-      50% { opacity: 0; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    .bio {
+      margin-top: 10px;
+      opacity: 0.8;
     }
 
-    .section {
-      margin-top: 50px;
+    .tags {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
     }
+
+    .tag {
+      border: 1px solid rgba(255,0,0,0.2);
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+
+    .section { margin-top: 40px; }
 
     .cmd {
       display: block;
-      padding: 15px;
+      padding: 12px;
       border: 1px solid rgba(255,0,0,0.2);
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       cursor: pointer;
       transition: 0.2s;
     }
@@ -79,16 +99,11 @@
       transform: translateX(5px);
     }
 
-    .projects {
-      margin-top: 20px;
-    }
-
     .project {
       border-left: 2px solid #ff2a2a;
       padding: 10px 15px;
       margin-bottom: 15px;
       opacity: 0.8;
-      transition: 0.2s;
     }
 
     .project:hover {
@@ -111,61 +126,68 @@
 
 <div class="container">
 
-  <div class="terminal" id="terminal">
-    <div class="line" id="typing"></div>
-    <span class="cursor"></span>
+  <!-- HERO -->
+  <div class="hero">
+    <img src="https://via.placeholder.com/90" class="avatar">
+
+    <div>
+      <div class="terminal">
+        <div class="line" id="typing"></div>
+        <span class="cursor"></span>
+      </div>
+
+      <div class="bio">developer • creator • digital systems</div>
+
+      <div class="tags">
+        <div class="tag">web</div>
+        <div class="tag">design</div>
+        <div class="tag">editing</div>
+      </div>
+    </div>
   </div>
 
+  <!-- LINKS -->
   <div class="section">
     <div class="cmd">> open github</div>
     <div class="cmd">> join discord</div>
     <div class="cmd">> contact</div>
   </div>
 
-  <div class="section projects">
+  <!-- PROJECTS -->
+  <div class="section">
     <div class="project">
-      [01] neural_interface<br>
+      [01] project_alpha<br>
       status: active<br>
-      type: experimental system
+      type: web system
     </div>
 
     <div class="project">
-      [02] shadow_net<br>
-      status: running<br>
-      type: private network
-    </div>
-
-    <div class="project">
-      [03] ghost_protocol<br>
-      status: unstable<br>
-      type: stealth framework
+      [02] project_beta<br>
+      status: building<br>
+      type: experimental
     </div>
   </div>
 
-  <footer id="adminTrigger">
-    tap x5
-  </footer>
+  <footer id="adminTrigger">tap x5</footer>
 
 </div>
 
 <script>
   const text = [
-    "> system initialized",
-    "> identity: vampair",
-    "> status: online",
-    "> access: granted"
+    "> I\'m vampair",
+    "> developer",
+    "> building things in the dark"
   ];
 
   let line = 0;
   let char = 0;
-  const speed = 40;
 
   function type() {
     if (line < text.length) {
       if (char < text[line].length) {
         document.getElementById("typing").innerHTML += text[line].charAt(char);
         char++;
-        setTimeout(type, speed);
+        setTimeout(type, 40);
       } else {
         document.getElementById("typing").innerHTML += "\n";
         line++;
@@ -177,12 +199,11 @@
 
   type();
 
-  // admin trigger
   let taps = 0;
   document.getElementById("adminTrigger").addEventListener("click", () => {
     taps++;
     if (taps === 5) {
-      alert("Admin panel (existing system)");
+      alert("Admin panel");
       taps = 0;
     }
     setTimeout(() => taps = 0, 2000);
